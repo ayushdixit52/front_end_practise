@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.main_box{
+    background: url("photo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.btn_one i{
+    color: white;
+    font-size: 30px;
+    font-weight: 600px;
+    position: absolute;
+    left: 25px;
+    line-height: 65px;
+    cursor: pointer;
+     transition: all 0.3s linear;
+}
+
+.sidebar_menu{
+    height: 100vh;
+    width: 300px;
+    left: -300px;
+    position: fixed;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 0 6px rgba(255,255,255,0.6);
+     transition: all 0.3s linear;
+}
+.sidebar_menu .logo{
+    width: 100%;
+    position:absolute;
+    line-height: 65px;
+    box-shadow: 0 2 4px rgba(255,255,255,0.6);
+     height: 60px;
+}
+.sidebar_menu .btn_two i{
+    color: gray;
+    font-size: 25px;
+    opacity: 0;
+    position: absolute;
+    left: 274px;
+    line-height: 65px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    
+
+}
+
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 60px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 10px 14px;
+}
+
+.sidebar_menu .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar_menu .menu i{
+     padding-right: 7px;
+}
+
+.sidebar_menu .social_media{
+    position:absolute;
+    left: 25%;
+    bottom: 50px;
+}
+
+.sidebar_menu .social_media i{
+    padding: 0 4px;
+    color: white;
+    opacity: 0.4;
+}
+#check{
+    display: none;
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 6px rgba(255,255,255,0.6);
+}
+
+.btn_one i:hover{
+    font-size: 40px;
+}
+
+.btn_two i:hover{
+    font-size: 35px;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#check:checked ~.sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~.btn_one i{
+    opacity: 0;
+}
+
+#check:checked~.sidebar_menu .btn_two i{
+    opacity: 1;
+}

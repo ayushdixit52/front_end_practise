@@ -1,0 +1,47 @@
+.ani{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    /* animation-name: widthanimation;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+
+    
+    /* animation: widthanimation 2s ease-in 0s 3 normal; */
+    
+
+    animation: colouranimation 4s ease-in 0s 3 normal;
+}
+@keyframes colouranimation {
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: blueviolet;
+    }
+    50%{
+        background-color: brown;
+    }
+    75%{
+        background-color: darkorange;
+    }
+    100%{
+        background-color: greenyellow;
+    }
+    
+}
+/* @keyframes widthanimation {
+    from{
+        width: 50px;
+        background-color: red;
+    }
+    to{
+        width: 400px;
+        background-color: skyblue;
+        border-radius: 10px;
+    }
+    
+} */
